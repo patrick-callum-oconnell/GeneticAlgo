@@ -5,6 +5,7 @@ import random
 import math
 import string
 import copy
+import numpy as np #going to start changing strings to char arrays to speed this up
 
 class individual:
     """Holds relevant info of an individual: namely, its string and fitness"""

@@ -34,7 +34,7 @@ while (i < max_generations):
 
     most_fit = our_pop.get_most_fit()
     if (most_fit.fitness == 1):
-        found_best = True
+        found_best = True #if we've found a perfect individual, 
         break
 
     #prints out generational updates every print interval
@@ -55,6 +55,11 @@ while (i < max_generations):
     our_pop.recombination(crossover_probability, mutation_probability)
     our_pop.update_all_fitnesses()
     i += 1
+
+    #I may also want to add something to this loop to have a threshold instead
+    #of just waiting for an individual to be perfect in case of premature convergence
+    #although, this is kinda covered already by the max generations
+    #but it may be nice to have that too
 
 print("")
 print("Algorithm complete.")
