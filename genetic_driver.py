@@ -15,7 +15,7 @@ Once the Django GUI is done, this won't be used, but it will still be useful for
 """
 
 import sys
-from genetic_classes import individual, population
+from classes import individual, population
 
 #initializes command line args as variables
 population_size = int(sys.argv[1])

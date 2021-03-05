@@ -1,11 +1,12 @@
 #AUTHOR: Patrick O'Connell
 #DATE: 11/20/2020
 
+import sys
 import random
 import math
 import string
 import copy
-import numpy as np #going to start changing strings to char arrays to speed this up
+import numpy as np
 
 class individual:
     """Holds relevant info of an individual: namely, its string and fitness"""
